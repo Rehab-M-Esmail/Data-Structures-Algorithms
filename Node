@@ -1,0 +1,33 @@
+//Modify using Templates
+template <typename T>
+class Node {
+private:
+    T Data;
+    Node<T>* Next;
+    //Node* previous;
+    static int size;
+public:
+ Node(T data)
+ {
+     Data=data;
+    // size++;
+    Next= nullptr;
+ }
+ T getData()
+ {
+     return Data;
+ }
+ void setData(T newData)
+ {
+     Data=newData;
+ }
+void setNext(Node* node)
+{
+    Next=node;
+}
+Node* getNext()
+{
+    return Next;
+}
+};
+
